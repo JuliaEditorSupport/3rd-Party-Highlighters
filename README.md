@@ -1,26 +1,38 @@
-# 3rd-Party-Highlighers and other editors with Julia support
-This repo is to track the various highlighers for julia or text editor with native Julia support that exist as parts of other repositories.
+# 3rd-Party-Highlighters and other editors with Julia support
 
+This repo tracks various syntax highlighters and text editors with Julia support that are maintained outside the [JuliaEditorSupport](https://github.com/JuliaEditorSupport) organization.
 
-Use issues in this repository to keep track of issues in other repositories that provide syntax highlighting for julia.
-This repo is not for tracking highlighers that are in software solely used by julia users (Eg the packages in JuliaEditorSupport),
-but rather in things like:
+## Parsers
 
-## 3rd-Party-Highlighers
+- [tree-sitter-julia](https://github.com/tree-sitter/tree-sitter-julia/),
+  used by:
+  - Neovim (since v0.5, requires [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) to install)
+  - Emacs (since 29.1, requires [julia-ts-mode](https://github.com/JuliaEditorSupport/julia-ts-mode))
+  - Helix
+  - Zed
+- [lezer-julia](https://github.com/JuliaPluto/lezer-julia),
+  used by CodeMirror6-based editors, including Pluto.jl.
+  - Note that Jupyter uses CodeMirror6, but Julia support still uses the legacy [CodeMirror 5 mode](https://github.com/codemirror/codemirror5/blob/5.65.19/mode/julia/julia.js).
 
- - highlight.js -- [julia](https://github.com/isagalaev/highlight.js/blob/861140d74522d6d50401ef8037f0ec1130954a8f/src/languages/julia.js) and [julia-REPL](https://github.com/isagalaev/highlight.js/blob/861140d74522d6d50401ef8037f0ec1130954a8f/src/languages/julia-repl.js), which does Discourse.
- - [CodeMirror](https://github.com/codemirror/CodeMirror/blob/3d89b71b955b72e61430f7f38e2350489cad9e15/mode/julia/julia.js), which highlights Jupyter notebooks
- - [Pygments](https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/julia.py)
- - [Rouge](https://github.com/jneen/rouge/blob/b8a2c9df24817b28303f9aad449524fdd7261416/lib/rouge/lexers/julia.rb)
- - [Prism](https://github.com/PrismJS/prism/blob/22cb0187331d9e7239b23431178981bdcc8e1064/components/prism-julia.js)
- - [Google Prettify](https://github.com/google/code-prettify), which highlights Stack Overflow
+## Regex-based scanners
 
-## Other text editors
-Some text editors ([not listed here](https://github.com/JuliaEditorSupport)) provides natively Julia support:
+- Highlight.js (
+  [julia](https://github.com/highlightjs/highlight.js/blob/11-stable/src/languages/julia.js) and
+  [julia-repl](https://github.com/highlightjs/highlight.js/blob/11-stable/src/languages/julia-repl.js)
+  ), used by:
+  - Julia Discourse
+  - Stack Overflow
+- [VSCode / TextMate](https://github.com/julia-vscode/julia-vscode/blob/main/syntaxes/julia_vscode.json)
+- [Micro editor](https://github.com/zyedidia/micro/blob/v2.0.14/runtime/syntax/julia.yaml)
+- [Prism](https://github.com/PrismJS/prism/blob/v2/src/languages/julia.ts)
+- [Pygments](https://github.com/pygments/pygments/blob/2.19.2/pygments/lexers/julia.py)
+- [Rouge](https://github.com/rouge-ruby/rouge/blob/v4.5.2/lib/rouge/lexers/julia.rb)
 
- - [micro](https://github.com/zyedidia/micro)
 
 ## Note
+
+Use issues in this repository to keep track of issues in other repositories that provide syntax highlighting for julia.
+
 Let us know if you are aware of more tools that we should be tracking.
 
 Basically if it is a tool and you can't work out why it is not highlighting correctly, please raise an issue here.
