@@ -8,17 +8,16 @@ but rather in things like:
 
 ## 3rd-Party-Highlighers
 
- - highlight.js -- [julia](https://github.com/isagalaev/highlight.js/blob/861140d74522d6d50401ef8037f0ec1130954a8f/src/languages/julia.js) and [julia-REPL](https://github.com/isagalaev/highlight.js/blob/861140d74522d6d50401ef8037f0ec1130954a8f/src/languages/julia-repl.js), which does Discourse.
- - [CodeMirror](https://github.com/codemirror/CodeMirror/blob/3d89b71b955b72e61430f7f38e2350489cad9e15/mode/julia/julia.js), which highlights Jupyter notebooks
- - [Pygments](https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/julia.py)
- - [Rouge](https://github.com/jneen/rouge/blob/b8a2c9df24817b28303f9aad449524fdd7261416/lib/rouge/lexers/julia.rb)
- - [Prism](https://github.com/PrismJS/prism/blob/22cb0187331d9e7239b23431178981bdcc8e1064/components/prism-julia.js)
- - [Google Prettify](https://github.com/google/code-prettify), which highlights Stack Overflow
+ - highlight.js -- [julia](https://github.com/highlightjs/highlight.js/blob/11.11.1/src/languages/julia.js) and [julia-REPL](https://github.com/highlightjs/highlight.js/blob/11.11.1/src/languages/julia-repl.js), which does Discourse.
+ - [CodeMirror](https://github.com/codemirror/codemirror5/blob/5.65.19/mode/julia/julia.js), which highlights Jupyter notebooks
+ - [Pygments](https://github.com/pygments/pygments/blob/2.19.2/pygments/lexers/julia.py)
+ - [Rouge](https://github.com/rouge-ruby/rouge/blob/v4.5.2/lib/rouge/lexers/julia.rb)
+ - [Prism](https://github.com/PrismJS/prism/blob/v2/src/languages/julia.ts)
 
 ## Other text editors
 Some text editors ([not listed here](https://github.com/JuliaEditorSupport)) provides natively Julia support:
 
- - [micro](https://github.com/zyedidia/micro)
+ - [micro](https://github.com/zyedidia/micro/blob/v2.0.14/runtime/syntax/julia.yaml)
 
 ## Note
 Let us know if you are aware of more tools that we should be tracking.
